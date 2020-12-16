@@ -65,6 +65,7 @@ body {
     margin-right: -15px;
 }
 
+/* Button from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 #myBtn {
     display: none;
     position: fixed;
@@ -85,7 +86,7 @@ body {
 #myBtn:hover {
     background-color: #555;
 }
-
+/* Button from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 
 /*General Artist IDs*/
 #weird, #oobs, #miss, #chibi{
