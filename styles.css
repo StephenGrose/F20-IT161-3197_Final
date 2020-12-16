@@ -5,11 +5,12 @@
     text-align:center;
     margin-top: 30px;
     margin-bottom: -5px;
+    font-size: 7vw;
  }
 
  #subheading{
     color:lightgray;
-    font-size: 18px;
+    font-size: 3vw;
     font-variant: small-caps;
     text-align: center;
     margin-bottom: 20px;
@@ -64,6 +65,28 @@ body {
     margin-right: -15px;
 }
 
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: powderblue 2px 3px;
+}
+  
+#myBtn:hover {
+    background-color: #555;
+}
+
+
 /*General Artist IDs*/
 #weird, #oobs, #miss, #chibi{
     padding: 10px;
@@ -72,10 +95,26 @@ body {
 /*Specific Artist IDs*/
 #weird{
     background-color: rgb(255, 206, 244);
-    background-image: url(sparkle.gif);
+    background-image: linear-gradient(to bottom right, rgb(255, 206, 244),rgb(247, 94, 247));
+    /*background-image: url(sparkle.gif);*/
     border-top: magenta 2px;
 }
 
+#oobs{
+    background-color: peachpuff;
+    background-image: linear-gradient(to bottom right, peachpuff, orange)
+}
+
+#miss {
+    background-color: lemonchiffon;
+    background-image: linear-gradient(to bottom right, lemonchiffon, rgb(252, 241, 87));
+    background-size: contain;
+}
+
+#chibi {
+    background-color: lavender;
+    background-image: linear-gradient(to bottom right, lavender, purple)
+}
 
 /*Displaying Content*/
 .profile{
@@ -84,6 +123,7 @@ body {
     align-content: center;
     justify-content: center;
     text-align-last: center;
+    padding-bottom: 5px;
 }
 
 .profile .profile-image{
@@ -97,27 +137,62 @@ body {
 .twitter-handle{
     text-align: center;
     text-shadow: white 2px 3px;
-    font-size: 4vw;
+    font-size: 5vw;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bolder;
 }
 
 .twitter-handle > a{
-    color:white;
+    color:black;
 }
+
 #weird .twitter-handle > a{
     color: rgb(247, 94, 247);
 }
 
+#oobs .twitter-handle > a {
+    color: orange;
+}
+
+#miss .twitter-handle > a {
+    color: rgb(252, 241, 87);
+    text-shadow: gray 2px 3px;
+}
+
+#chibi .twitter-handle > a {
+    color: purple;
+    text-shadow: gray 2px 3px;
+}
+
+.art-display {
+    align-content: center;
+    justify-content: center;
+}
+
 .frame{
     padding: 15px;
+}
+
+#weird .frame {
     background-color:lavender;
+}
+
+#oobs .frame {
+    background-color: lemonchiffon;
+}
+
+#miss .frame {
+    background-color: peachpuff;
+}
+
+#chibi .frame {
+    background-color:rgb(255, 206, 244);
 }
 
 /*Footer*/
 #copyright{
     background-color: black;
-    text-align: right;
+    text-align: center;
     font-weight: bold;
     color: cyan;
     padding-top: 2px;
@@ -131,5 +206,4 @@ footer {
     font-size: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-top: 30px;
  }
