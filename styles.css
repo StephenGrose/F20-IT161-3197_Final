@@ -1,0 +1,135 @@
+
+/* HEADING*/
+ h1{
+    font-variant: small-caps;
+    text-align:center;
+    margin-top: 30px;
+    margin-bottom: -5px;
+ }
+
+ #subheading{
+    color:lightgray;
+    font-size: 18px;
+    font-variant: small-caps;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* BODY*/
+body {
+    font-family: Helvetica, sans-serif;
+    color: white;
+    background-color: black;
+ }
+
+ /* NAV */
+.button, .button a {
+    background-color: teal;
+    color: white;
+    border: none;
+    padding: 15px 15px;
+    text-decoration: none;
+    text-align:center;
+    display: inline-block;
+    font-size: 36px;
+    cursor: pointer;
+    box-sizing: none;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    font-variant: small-caps;
+    transition: 0.5s;
+}
+    
+.button:hover, .button:hover a {
+    background-color: rgb(4, 78, 78);
+    color: white;
+}
+
+.button:active, .button:active a{
+    background-color:rgb(2, 177, 177);
+    color:white;
+}
+
+.btn-block+.btn-block {
+    margin-top: 0rem;
+}
+
+.add-border{
+   border: 1.2px solid white;
+}
+
+.remove-margin{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+/*General Artist IDs*/
+#weird, #oobs, #miss, #chibi{
+    padding: 10px;
+}
+
+/*Specific Artist IDs*/
+#weird{
+    background-color: rgb(255, 206, 244);
+    background-image: url(sparkle.gif);
+    border-top: magenta 2px;
+}
+
+
+/*Displaying Content*/
+.profile{
+    display: grid;
+    grid-auto-flow: row;
+    align-content: center;
+    justify-content: center;
+    text-align-last: center;
+}
+
+.profile .profile-image{
+    align-content: center;
+    justify-content: center;
+}
+.profile-image > a > img{
+    border-radius: 50%;
+}
+
+.twitter-handle{
+    text-align: center;
+    text-shadow: white 2px 3px;
+    font-size: 4vw;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+}
+
+.twitter-handle > a{
+    color:white;
+}
+#weird .twitter-handle > a{
+    color: rgb(247, 94, 247);
+}
+
+.frame{
+    padding: 15px;
+    background-color:lavender;
+}
+
+/*Footer*/
+#copyright{
+    background-color: black;
+    text-align: right;
+    font-weight: bold;
+    color: cyan;
+    padding-top: 2px;
+    padding-right: 6px;
+}
+
+footer {
+    background-color:teal;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+ }
